@@ -45,13 +45,13 @@ export default function SignUp() {
       <form action="" onSubmit={formSubmit}>
         <FormInput label="Display Name" inputOptions={{ type: "text", name: "displayName", id: "", required: true, value: displayName, onChange: handleChange }} />
 
-        <FormInput label="Email" inputOptions={{ type: "email", name: "Email", id: "", required: true, value: email, onChange: handleChange }} />
+        <FormInput label="Email" inputOptions={{ type: "email", name: "email", id: "", required: true, value: email, onChange: handleChange }} />
 
         <FormInput label="Password" inputOptions={{ type: "password", name: "password", id: "", required: true, value: password, onChange: handleChange }} />
 
         <FormInput label="Confirm Password" inputOptions={{ type: "password", name: "confirmPassword", id: "", required: true, value: confirmPassword, onChange: handleChange }} />
 
-        <Button child="Sign up" type="submit" />
+        <Button type="submit">Sign up</Button>
       </form>
     </div>
   )

@@ -1,6 +1,6 @@
 import Home from "./routes/home/Home"
 import Navigation from "./routes/navigation/Navigation"
-import SignIn from "./routes/sign-in/SignIn"
+import Authentication from "./routes/authentication/Authentication"
 import { Route, Routes } from "react-router-dom"
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path="sign-in" element={<SignIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   )
