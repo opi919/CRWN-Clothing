@@ -1,5 +1,5 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { signInWithGooglePopup, signInAuthUserWithEmailAndPass } from "../../utils/firebase/Firebase"
 import FormInput from "../form-input/FormInput"
 import Button from "../button/Button"
@@ -22,8 +22,7 @@ export default function SignIn() {
     e.preventDefault()
 
     try {
-      const response = await signInAuthUserWithEmailAndPass(email, password)
-      console.log(response)
+      const { user } = await signInAuthUserWithEmailAndPass(email, password)
       resetFormValues()
     } catch (err) {
       alert(err.message)

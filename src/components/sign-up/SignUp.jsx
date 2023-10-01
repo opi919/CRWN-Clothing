@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import { useState } from "react"
 import { createAuthUserWithEmailAndPass, createUserDocFromAuth } from "../../utils/firebase/Firebase"
 import FormInput from "../form-input/FormInput"
